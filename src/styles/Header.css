@@ -1,0 +1,17 @@
+.header {
+  background: #b71775;
+ 
+  display: flex;
+  
+  text-align:center
+}
+header {
+  background: #b71775;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  width: 100vw;
+}
+
+
