@@ -1,33 +1,52 @@
-#bgImgHome {
-    max-height: 100vh;
-    min-width: 1024px;
-    width: 100%;
-    height: auto;
-    position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    z-index: -1;
-  }
-@keyframes slide {
-    0% {
-      transform: translate3d(0, 0, 0);
+
+    .bg {
+      background: linear-gradient(180deg, rgb(242, 132, 223) 0%, rgba(194,130,237,1) 40%, rgba(58,112,210,1) 100%);
     }
-    100% {
-      transform: translate3d(-1500px, 0, 0);
-    }
-  }
-  
-  #bgImgHome {
-    max-height: 100vh;
-    min-width: 4000px;
-    width: 100%;
-    height: auto;
+
+  .nightroad{
+    height: 160px;
+    width: 600%;
+    background: url('../images/Img_02.png');
+    display: block;
     position: fixed;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-    animation: slide 20s linear infinite;
+    bottom: 0%;
+    left: 0%;
+    background-repeat: repeat-x;
+    animation: moveright 10s linear infinite;
+  }
+
+  @keyframes moveright{
+    100%{transform: translateX(-2950px)}
+  }
+  .car:active{
+    animation: zoom 5s linear
+  }
+  @keyframes zoom {
+    100%{transform:translateX(2500px) translateY(-1px)}
+    50%{transform:translateX(1000px) translateY(2px)}
+    0%{transform:translateX(0px) translateY(-1px)}
+
+  }
+
+  .car {
+    
+    position: fixed;
+    bottom: 2.5%;
+    left: 5%;
+    animation: suspension 1s linear infinite
+  }
+
+  @keyframes suspension{
+    100%{transform:translateY(-1px)}
+    50%{transform:translateY(2px)}
+    0%{transform:translateY(-1px)}
+
+  }
+
+  .sportscar {
+    width: 101px;
+    
+
   }
 .body {
     
@@ -36,10 +55,23 @@ align-items: center;
 justify-content: center;
 background-color: transparent
 }
-
+h2 {
+  font-size: 30px;
+  text-decoration: underline;
+}
+.first-box {
+  text-align: center;
+    margin-top: 100px;
+    background-color: #15aef0;
+    border: white solid;
+    height: 25rem;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 12px 8px black;
+}
 .vice-box {
+  text-align: center;
     margin-top: 25px;
-    
     background-color: #15aef0;
     border: white solid;
     height: 34rem;
@@ -56,16 +88,22 @@ background-color: transparent
     height: 32rem;
 }
 p {
+  
     font-size: 2rem;
+    align-self: center;
 }
 
 .icon {
-    margin: 10px 30px auto;
+    margin: 1px 30px auto;
     background-color: rgba(201, 221, 240, 0.916);
     border-radius: 8px;
     box-shadow: 2px 3px black;
-    transition: transform .5s;
+    transition: transform .3s;
 }
 .icon:hover {
-    transform: scale(3);
+    transform: scale(1.5);
+}
+
+.gameImg {
+  height: 80px
 }

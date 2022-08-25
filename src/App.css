@@ -40,5 +40,10 @@
 
 .font-link {
   color: white;
-  font-family: 'Kanit', sans-serif;  text-shadow: 2px 2px black;
+  font-family: 'Kanit', sans-serif;  text-shadow: 2px 2px rgb(175, 13, 135);
+}
+@media (max-width: 480px) {
+  .font-link {
+    font-size: 16px;
+  }
 }

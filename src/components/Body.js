@@ -1,23 +1,28 @@
 import React from 'react';
-import img from '../images/bg.jpg'
+import img2 from '../images/sports-car.png'
+import gameImg from '../images/Project2.png'
 // Here we import the Navbar.css file to grant access to some additional classNames
 import '../styles/Body.css';
 
 const icon = {width: "5rem"}
 function Body()  {
     return (
-<body>
-    <img id="bgImgHome" src={img} alt="space" />
+<body className='bg'>
+    <div className='nightroad'></div>
+    <div className='car'><img className='sportscar' src={img2} alt='car'/></div>
+
     <div className="body">
-        <div className='vice-box'>
+        <div className='first-box'>
+            <p className='font-link'>Hiya! I'm Will Summerlin</p>
+            <p className='font-link'>Thanks for checking out my site</p>
             <p className='font-link '>
-                this is a bunch of text stuff
+            I am a Developer and lifetime learner leveraging an accounting, sales, and project management background to deliver concise and efficacious software solutions.
             </p>
         </div>
     </div>
     <div className="body">
         <div className='vice-box'>
-            <h2 className="font-link blocked-head">Skills</h2>
+            <h2 className="font-link blocked-head" id='skills'>Tech Proficiencies</h2>
             <div className='skill-box'>
                 <div className="card" class="icon" alt='Bable' style={icon}>
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/babel/babel-original.svg" />
@@ -95,7 +100,18 @@ function Body()  {
                 </div>
           </div>
         </div>
+    </div>
+    <div className="body">
+        <div className='vice-box'>
+            <p className='font-link '>
+                My Project Portfolio
+            </p>
+            <div>
+                <img className='gameImg col-4' src={gameImg}/> 
+                <a href='https://lit-crag-19257.herokuapp.com/home' target='_blank' rel="noreferrer noopener">Check our project 2!</a> 
+            </div>
         </div>
+    </div>
 </body>
     );
 }
