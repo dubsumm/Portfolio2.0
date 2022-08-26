@@ -1,15 +1,15 @@
 .navbar {
-  margin-top: 10px;
-  background-color: transparent;
-  height: 65px;
+  background-color: rgb(46, 36, 60);
+  height: 10%;
   width: 100%;
   display: flex;
   align-content: center;
   justify-content: space-around;
   position: fixed;
+  box-shadow: 2px 2px black;
 }
 
-.navbar a {
+.navbar a, span {
   
   color: white;
   background-color: transparent;
@@ -19,8 +19,8 @@
 }
 
 .glow-on-hover {
-  width: 20%;
-  height: 60px;
+  width: 13%;
+  height: 100%;
   border: white;
   outline: none;
   color: #fff;
@@ -77,12 +77,4 @@
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
-}
-
-@media (max-width: 480px) {
-  .glow-on-hover {
-    height: 200px;
-    width: 100%;
-    display: inline-block;
-  }
 }

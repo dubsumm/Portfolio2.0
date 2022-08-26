@@ -13,10 +13,10 @@ function Navbar() {
 
   return (
     <nav className="navbar font-link">
-      <button className='glow-on-hover' onClick = {() => setCount(count => count+1)}><span className='font-link'>LIKES: {count}</span> </button>
-      <button className='glow-on-hover'><Link className="font-link" to="skills" smooth={true} duration={500}>Skill and Thrills</Link></button>
-      <button className='glow-on-hover'><Link className="font-link" to="/">Portfolio</Link></button>
-      <button className='glow-on-hover'><Link className="font-link" to="/">Contact</Link></button>
+      <button className='glow-on-hover col-xs-12' onClick = {() => setCount(count => count+1)}><span className='font-link'>LIKES: {count} 👍</span> </button>
+      <button className='glow-on-hover col-xs-12'><Link className="font-link" to="skills" smooth={true} duration={500}>Skill and Thrills</Link></button>
+      <button className='glow-on-hover col-xs-12'><Link className="font-link" to="port" smooth={true} duration={500}>Portfolio</Link></button>
+      <button className='glow-on-hover col-xs-12'><Link className="font-link" to="contact" smooth={true} duration={500}>Contact</Link></button>
     </nav>
   );
 }
