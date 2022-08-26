@@ -1,5 +1,7 @@
 # Portfolio2.0
 
+https://dubsumm.github.io/Portfolio2.0/
+
 ![image](https://user-images.githubusercontent.com/102333319/186823413-e4dda62a-7465-4411-ace4-5c604ca1050b.png)
 
 ## Description: this app will allow the user to write a title and text to a db and have that info served back to them when called
